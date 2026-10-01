@@ -10,3 +10,7 @@ def show_tasks():
 add_task("Вивчити Git")
 add_task("Створити репозиторій")
 show_tasks()
+
+def delete_task(number):
+    if 1 <= number <= len(tasks):
+        tasks.pop(number - 1)
